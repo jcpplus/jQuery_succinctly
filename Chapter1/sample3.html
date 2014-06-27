@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>sample 2</title>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+<!-- Waiting on the DOM to be ready -->
+    <script>
+    jQuery(document).ready(function() {
+        alert('DOM is ready!');
+    });
+
+    jQuery(function() {
+        alert('DOM is real ready!!');
+    });
+
+    jQuery(function($) {
+        alert('Seriously, its ready!!!');
+    })
+    </script>
+</body>
+
+</html>
