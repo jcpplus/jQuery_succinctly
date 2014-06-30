@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sample 8 - Using destructive jQuery methods and exiting destruction using 
+end()</title>
+</head>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<body>
+	<style>
+	.last {
+		background: #090;
+	}
+	</style>
+	<ul id="list">
+		<li></li>
+		<li>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+	<script>
+	$('#list')
+		.find('> li')
+			.filter(':last')
+				.addClass('last')
+			.end()
+			.find('ul')
+				.css('background', '#ccc')
+				.find('li:last')
+					.addClass('last')
+				.end()
+			.end()
+		.end()
+		.find('li')
+			.append('i am &lt;li&gt;');	
+	</script>
+</body>
+</html>
