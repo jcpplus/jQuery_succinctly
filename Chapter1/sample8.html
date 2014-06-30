@@ -27,7 +27,8 @@ end()</title>
 	</ul>
 
 	<script>
-	$('#list')
+	jQuery(function($) {
+  	$('#list')
 		.find('> li')
 			.filter(':last')
 				.addClass('last')
@@ -41,6 +42,7 @@ end()</title>
 		.end()
 		.find('li')
 			.append('i am &lt;li&gt;');	
+  })
 	</script>
 </body>
 </html>
