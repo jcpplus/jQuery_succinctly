@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <title>sample 17</title>
+  <script src="../js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+  <div id="div1">I am a div</div>
+  <div id="div2">I am a div</div>
+  <div id="div3">I am a div</div>
+  <div id="div4">I am a div</div>
+  <script>
+    (function($) {
+      // alert($('div').attr('id'));// alert div1
+      $('div').each(function() {
+        alert($(this).attr('id'));
+      });
+    })(jQuery);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <title>sample 13</title>
+  <script src="../js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+  <a href="http://www.jquery.com" title="anchor1">jQuery.com</a>
+  <a href="http://www.jquery.com" title="anchor2">jQuery.com</a>
+  <a href="http://www.jquery.com" title="anchor3">jQuery.com</a>
+  <script>
+  (function($) {
+    var arrayOfAnchors = $('a').get();
+    alert(arrayOfAnchors[2].title);
+  })(jQuery);
+  </script>
+</body>
+
+</html>

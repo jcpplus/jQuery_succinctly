@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <a id="link1">jQuery.com</a>
+    <a id="link2">jQuery.com</a>
+    <a id="link3">jQuery.com</a>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script>
+    (function($) {
+        $('a').mouseenter(
+            function() {
+                alert(this.id);
+            });
+    })(jQuery);
+    </script>
+    <script>
+    (function($) {
+
+    })(jQuery);
+    </script>
+</body>
+
+</html>

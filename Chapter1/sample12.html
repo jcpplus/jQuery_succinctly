@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>sample 12</title>
+    <!-- Just because you wrap jQuery functionality around an HTML element does not mean you lose 
+access to the actual DOM element itself. You can always extract an element from the wrapper 
+set and operate on the element via native JavaScript. For example, in the code below I am 
+setting the title attribute of the <a> element in the HTML page by manipulating the native title 
+property of the <a> DOM element.  -->
+    <script src="../js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+    <a>jQuery.com</a>
+    <script>
+    (function($) {
+        $('a').get(0).title = 'jQuery.com';
+        //$('a')[0].title = 'jQuery.com';
+        $('a').attr('href', 'http://www.jquery.com');
+
+    })(jQuery);
+    </script>
+</body>
+
+</html>

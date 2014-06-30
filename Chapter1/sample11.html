@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>sample 11</title>
+<script src="../js/jquery-1.11.1.min.js"></script>
+
+</head>
+<body>
+  <a href="" id="link1">jQuery1</a>
+  <a href="" id="link2">jQuery1</a>
+  <a href="" id="link3">jQuery1</a>
+  <script>
+    (function($){
+      $('a').each(function() {
+        alert($(this).attr('id'));
+      })
+    })(jQuery);
+  </script>
+</body>
+</html>
