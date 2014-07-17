@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>sample42</title>
+  <script src="../js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+  <script>
+    $(function(){
+      $('<div><a href=""></a></div>')
+        .find('a')
+        .text('jQuery')
+        .attr('href', 'http://www.jquery.com')
+        .appendTo('body');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>sample40</title>
+  <script src="../js/jquery-1.11.1.min.js"></script>
+</head>
+<style>
+  div{
+    border: 1px solid #333;
+    padding: 10px;
+  }
+</style>
+<body>
+<div id="parent2">2
+  <div id="parent1">1
+    <div id="parent0">0
+      <div id="start">start</div>
+    </div>
+  </div>
+</div>
+<script>
+  $(function(){
+    // alert($('#start').parent().attr('id'));
+    // alert($('#start').parents('#parent0').attr('id'));
+    // alert($('#start').parents()[0].id);
+
+    alert($('#start').closest('#parent0').attr('id'));
+
+    // alert($('#start').parent().parent().attr('id'));
+    // alert($('#start').parents('#parent1').attr('id'));
+    // alert($('#start').parents()[1].id);
+
+    alert($('#start').closest('#parent1').attr('id'));
+
+    alert($('#start').parent().parent().parent().attr('id'));
+    alert($('#start').parents('#parent2').attr('id'));
+    alert($('#start').parents()[2].id);
+
+    alert($('#start').closest('#parent2').attr('id'));
+  });
+</script>
+</body>
+</html>
